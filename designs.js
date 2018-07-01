@@ -6,8 +6,8 @@ var sizePicker, pixelCanvas, inputHeight, inputWeight, colorPicker
 
 
 $('#pixelCanvas').submit(function makeGrid(grid) {
-    var row= $('inputHeight').val();
-    var cols=$('inputWidth').val();
+    let row= $('inputHeight').val();
+    let cols=$('inputWidth').val();
     
     
             for (var i=1;; i<=row; i++){
@@ -32,7 +32,7 @@ $(inputSelector).change(function(event) {
 function makeGrid() {
 
 $('#bgColorPicker').on('change', function(){
-    let bgColor = $('#bgColorPicker').val()
+    const bgColor = $('#bgColorPicker').val()
     $('body').css('background', bgColor);
     $('#pixelCanvas').css('background', bgColor);
   })
